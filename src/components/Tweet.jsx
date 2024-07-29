@@ -3,6 +3,7 @@ import ProfileImage from './ProfileImage';
 import User from './User';
 import Timestamp from './Timestamp';
 import Actions from './Actions';
+import Message from './Message';
 function Tweet({ tweet }) {
   return (
     <div className="tweet">
@@ -16,7 +17,7 @@ function Tweet({ tweet }) {
         <Timestamp time={tweet.timestamp} />
         </div>
 
-        <p className="message">{tweet.message}</p>
+        <Message message={tweet.message} />
 
         <Actions />
       </div>
